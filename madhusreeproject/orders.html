@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<title>Landing Page</title>
+</head>
+<style>
+
+
+</style>
+
+<body>
+	<nav>
+		<i class="fa fa-bars" style="font-size: 20px"onclick=menu_open()></i>
+		<div class="heading">CrAfThaVeN</div>
+		
+		<div class="navbar">
+			<ul>
+				<li><a href="#Home">Home</a></li>
+                <li><a href="#My Projects">Artists</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#contact">Sign Up</a></li>
+				<i class="fa fa-shopping-cart"></i>
+			
+			</ul>
+
+		</div>
+	</nav>
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar">
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()">
+			
+			
+		</a>
+		<a href="#">Home</a>
+		<a href="#">Artists</a>
+		<a href="#">About</a>
+		<a href="#">Sign Up</a>
+
+
+
+	</div>
+    <div class="menu_box">
+        <span onclick="menu_hide()">X</span>
+        <hr>
+        <br><br><br>
+        <ul>
+          
+          <a href="crafts.html"><li>crafts</li></a><br>
+          <a href="painting.html"><li>Paintings</li></a><br>
+          <a href="artists.html"><li>artists</li></a><br>
+          <a href="unique.html"><li>unique items</li></a><br>
+          <a href="orders.html"><li>Orders</li></a><br>
+          <a href="settings.html"><li>Settings</li></a><br>
+        </ul>
+       </div>
+      <script>
+        let menu_bx=document.querySelector(".menu_box");
+         function menu_open(){
+        menu_bx.style.visibility="visible"
+         }
+         function menu_hide(){
+        menu_bx.style.visibility="hidden"
+         }
+      
+       </script>
